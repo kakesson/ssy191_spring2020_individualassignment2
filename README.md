@@ -1,4 +1,4 @@
-# ssy191 Individual Assignment 2
+# SSY191 Individual Assignment 2
 
 In this assignment there are two problems to be solved. You submit the assignment by writing a report, put it as pdf-file in the report directory. You should also submit the code for both Problem A and Problem B.
 
