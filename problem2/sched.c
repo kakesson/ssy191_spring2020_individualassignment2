@@ -63,7 +63,7 @@ void remove_first_task()
     else { // Set first_task to be the second task in the list
         first_task = first_task->next;
     }
-    free(first_task); // Deallocate the memory for the first task
+    free(temp); // Deallocate the memory for the first task
 }
 
 /* Remove all tasks by iteratively removing the first task until the list is
