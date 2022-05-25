@@ -4,6 +4,8 @@ In this assignment there are two problems to be solved. You submit the assignmen
 
 Each problem includes a Makefile that you can run to compile the code, just execute make in the terminal window. If the compilation is successfull you will then get an executable file that you can run.
 
+Remeber to name the report with your CID, see README file in the report directory.
+
 # Problem 1
 You only need to put in the changes to the code so that it avoids a deadlock - according to the instructions. The code does not necessarily have to be executable. 
 
