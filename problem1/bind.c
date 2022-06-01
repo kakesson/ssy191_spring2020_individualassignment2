@@ -5,9 +5,9 @@
 #include "task.h"
 #include "semphr.h"
 
-xTaskHandle task_a_Handle;
-xTaskHandle task_b_Handle;
-xTaskHandle task_c_Handle;
+xTaskHandle task_a_handle;
+xTaskHandle task_b_handle;
+xTaskHandle task_c_handle;
 
 SemaphoreHandle_t resource_a;
 SemaphoreHandle_t resource_b;
@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 {
     resource_a = xSemaphoreCreateMutex();
     resource_b = xSemaphoreCreateMutex();
-    xTaskCreate(the_task, "Task 1", configMINIMAL_STACK_SIZE, NULL, 1, &task_a_Handle);
+    xTaskCreate(the_task, "Task 1", configMINIMAL_STACK_SIZE, NULL, 1, &task_a_handle);
     xTaskCreate(the_task, "Task 2", configMINIMAL_STACK_SIZE, NULL, 1, &task_b_handle);
     xTaskCreate(the_task, "Task 3", configMINIMAL_STACK_SIZE, NULL, 1, &task_c_handle);
 

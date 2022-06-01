@@ -1,18 +1,22 @@
-  # the compiler: gcc for C program, define as g++ for C++
-  CC = gcc
+# the compiler: gcc for C program, define as g++ for C++
+CC = gcc
 
-  # compiler flags:
-  #  -g    adds debugging information to the executable file
-  #  -Wall turns on most, but not all, compiler warnings
-  CFLAGS  = -g -Wall
+# compiler flags:
+#  -g    adds debugging information to the executable file
+#  -Wall turns on most, but not all, compiler warnings
+CFLAGS  = -g -Wall
 
-  # the build target executable:
-  TARGET = sched
+# libraries to include: 
+#  -lm   links the math library which is not part of the standard library
+LIBS = -lm
 
-  all: $(TARGET)
+# the build target executable:
+TARGET = sched
 
-  $(TARGET): $(TARGET).c
-  	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
+all: $(TARGET)
 
-  clean:
-  	$(RM) $(TARGET)
+$(TARGET): $(TARGET).c
+	$(CC) $(CFLAGS) $(LIBS) -o $(TARGET) $(TARGET).c
+
+clean:
+	$(RM) $(TARGET)
